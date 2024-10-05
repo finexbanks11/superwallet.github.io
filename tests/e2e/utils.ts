@@ -6,7 +6,7 @@ import TestWallets from '../testWallets.json'
 
 export const testWallets = TestWallets
 
-let link = 'http://localhost:9001/'
+let link = 'http://localhost:1337/'
 
 if (process.env.ACTIONS) {
   link = `file:///home/runner/work/MultiCurrencyWallet/MultiCurrencyWallet/build-${

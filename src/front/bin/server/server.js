@@ -8,8 +8,8 @@ import webpackMiddleware from 'webpack-dev-middleware'
 import webpackConfig from '../../../../webpack'
 
 
-const port      = process.env.PORT || 9001
-const host      = process.env.HOST || '0.0.0.0'
+const port      = process.env.PORT || 1337
+const host      = process.env.HOST || 'localhost'
 
 const app       = express()
 const compiler  = webpack(webpackConfig)
