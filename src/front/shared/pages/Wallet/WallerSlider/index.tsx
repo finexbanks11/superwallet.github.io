@@ -194,63 +194,7 @@ class WallerSlider extends React.Component<WallerSliderProps, WallerSliderState>
     )
 
     return window.location.hash !== linksManager.hashHome ? null : (
-      <div className="data-tut-banners">
-        <h3 className={`${styles.bannersHeading}`}>
-          <FormattedMessage id="ForYou" defaultMessage="For you" />
-        </h3>
-        {!this.state.isFetching ? (
-          //@ts-ignore
-          <ContentLoader banners />
-        ) : (
-          <div
-            id="swiper_banners"
-            className={`swiper ${styles.swiperContainer}`}
-            style={{ marginTop: '20px', marginBottom: '30px', overflow: 'hidden' }}
-          >
-            <div className="swiper-wrapper">
-              {multisigPendingCount > 0 && (
-                <div className="swiper-slide">
-                  <NotifyBlock
-                    className="notifyIncomeRequest"
-                    background="129218"
-                    text={needSignMultisig}
-                    feedbackText={`BTC multisig`}
-                    onPress={this.handleGoToMultisigRequest}
-                  />
-                </div>
-              )}
-              {!isPrivateKeysSaved && !mnemonicDeleted && !disableInternalWallet && (
-                <div className="swiper-slide">
-                  <NotifyBlock
-                    className="notifyBlockSaveKeys"
-                    icon={security}
-                    text={
-                      <FormattedMessage
-                        id="ShowMyMnemonic_copy"
-                        defaultMessage="Please backup your wallet"
-                      />
-                    }
-                    feedbackText={`Save mnemonic`}
-                    onPress={mnemonicDeleted ? this.handleShowKeys : this.handleShowMnemonic}
-                  />
-                </div>
-              )}
-              {banners &&
-                banners.length > 0 &&
-                banners.map((banner, index) => (
-                  <div key={index} className="swiper-slide">
-                    <NotifyBlock
-                      background={`${banner[3]}`}
-                      icon={banner[5]}
-                      text={banner[2]}
-                      link={banner[4]}
-                    />
-                  </div>
-                ))}
-            </div>
-          </div>
-        )}
-      </div>
+      <div></div>
     )
   }
 }
