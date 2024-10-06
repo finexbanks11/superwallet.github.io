@@ -128,13 +128,14 @@ const externalConfig = () => {
         */]
       },
       menu: {
-        before: [/*
+        before: [
+        ],
+        after: [
           {
-            "title": "After",
-            "link": "https:\/\/google.com"
+            title: 'Community',
+            link: 'https://www.nas.io/aczen'
           }
-        */],
-        after: []
+        ]
       },
     },
   }
