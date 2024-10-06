@@ -484,7 +484,7 @@
             <button id="preloaderConnectBtn" class="starter-modal__btn">
               <?xml version="1.0" encoding="utf-8"?>
               <svg version="1.1"
-                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 318.6 318.6">
+                xmlns="src\front\shared\images\logo\aczen_logo.svg" x="0px" y="0px" viewBox="0 0 318.6 318.6">
               <style type="text/css">
                 .st0{fill:#E2761B;stroke:#E2761B;stroke-linecap:round;stroke-linejoin:round;}
                 .st1{fill:#E4761B;stroke:#E4761B;stroke-linecap:round;stroke-linejoin:round;}
@@ -562,9 +562,9 @@
       <!-- Loader before any JS -->
       <div id="wrapper_element" class="overlay">
         <div class="center">
-          <div id="loader" class="loader">
-            <img id="loaderImg" />
-          </div>
+          <!-- <div id="loader" class="loader">
+            <img id="loaderImg" src = "src/front/shared/images/logo/aczen_logo.svg"/>
+          </div> -->
           <div id="beforeJSTip" class="tips">Loading...</div>
         </div>
         <div class="mb-4 show-on-fail-ls d-none" id="onFailLocalStorageMessage">
@@ -978,7 +978,7 @@
 
       window.logoUrl = window.logoUrl || '#';
       window.darkLogoUrl = window.darkLogoUrl || '';
-      window.loaderLogoUrl = window.loaderLogoUrl || '';
+      window.loaderLogoUrl = 'src/front/shared/images/logo/aczen_logo.svg';
 
       if (window.localStorage.getItem('isDark')) {
         window.logoUrl = window.darkLogoUrl || window.logoUrl;
@@ -990,7 +990,6 @@
         window.location.hostname === "swaponline.io"
       ) {
         // used by Loader component
-        window.loaderLogoUrl = "https://swaponline.github.io/swap_logo_256.svg";
         document.getElementById("loaderImg").src = window.loaderLogoUrl;
       } else {
         if (window.logoUrl != '#') {

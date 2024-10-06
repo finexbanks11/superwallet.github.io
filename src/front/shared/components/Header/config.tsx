@@ -33,7 +33,7 @@ export const messages = defineMessages({
   marketmaker: {
     id: 'menu.marketmaker',
     description: 'Menu item "Marketmaker"',
-    defaultMessage: 'Earn',
+    defaultMessage: 'Community',
   },
 })
 

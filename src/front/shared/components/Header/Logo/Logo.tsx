@@ -9,8 +9,8 @@ import styles from './Logo.scss'
 
 import ThemeTooltip from '../../ui/Tooltip/ThemeTooltip'
 
-import logoBlack from 'shared/images/logo/logo-black.svg'
-import logoColored from 'shared/images/logo/logo-colored.svg'
+import logoBlack from 'shared/images/logo/aczen_logo.svg'
+import logoColored from 'shared/images/logo/aczen_logo.svg'
 
 
 /* uncomment to debug */
