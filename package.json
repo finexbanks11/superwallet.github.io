@@ -166,6 +166,7 @@
     "node-sessionstorage": "^1.0.0",
     "nodemon": "^2.0.7",
     "npm-audit-whitelister": "^1.0.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "path-browserify": "^1.0.1",
     "peer-id": "^0.15.1",
     "pg": "^8.5.1",
